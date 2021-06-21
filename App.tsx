@@ -5,7 +5,7 @@ import { SignIn } from './Src/Screens';
 const App = () => {
   return (
     <>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
       <SignIn />
     </>
   );

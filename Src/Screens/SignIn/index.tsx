@@ -1,13 +1,26 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { Text, View, Image } from 'react-native';
+import IllustrationImg from '../../assets/illustration.png';
+import { ButtonIcon } from '../../Components';
 import { styles } from './styles';
 
 const SignIn = () => {
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Image source={IllustrationImg} style={styles.image} />
+      <View style={styles.content}>
+        <Text style={styles.title}>
+          Conecte-se {`\n`}e organize suas {`\n`}jogatinas
+        </Text>
+        <Text style={styles.subTitle}>
+          Crie grupos para jogar seus games {`\n`}favoritos com seus amigos
+        </Text>
+        <ButtonIcon
+          onPress={() => {}}
+          title="Entrar com Discord"
+          activeOpacity={0.7}
+        />
+      </View>
     </View>
   );
 };
